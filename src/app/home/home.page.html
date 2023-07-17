@@ -14,7 +14,17 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-item style="width: 400px; margin: auto;">
+    <ion-select class="ion-margin" interface="popover" fill="outline" label="Select a page" label-placement="floating">
+      <ion-select-option *ngFor="let a of [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], let i = index">
+        {{ "page " + (i + 1) }}
+      </ion-select-option>
+    </ion-select>
+    </ion-item>
+    <ion-item style="width: 400px; margin: auto;">
+      <ion-input type="number" label="key in 'e' instead of a number" label-placement="floating" placeholder="pls enter a number"></ion-input>
+    </ion-item>
+    <!-- <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p> -->
   </div>
 </ion-content>
